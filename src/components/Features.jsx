@@ -1,18 +1,18 @@
 const Features = () => {
   const features = [
     {
-      title: "Skill Development",
-      description: "Master cutting-edge technologies through our comprehensive learning paths.",
+      title: "TECH TRANSITION BOOTCAMP",
+      description: "We provide intensive, hands-on bootcamp training programs designed to equip you with the latest skills and knowledge needed for successful career transitions in the tech industry.",
       image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjk3YzJkMzE4ZWM4ZjBiYzM1ZjY4ZjBjYzM5ZjM4ZTBhOGU4ZjZhZiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/juua9i2c2fA0AIp2iq/giphy.gif"
     },
     {
-      title: "Career Guidance",
-      description: "Get personalized mentorship from industry experts to accelerate your growth.",
+      title: "CAREER MENTORING",
+      description: "Our mentors are industry professionals who provide tailored guidance, career advice, and support to help you achieve your professional goals",
       image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDVmNzBkZWZjZTY4ZmQ5ZWNhZDM4ZjM5ZjM4NzBkZDY4ZTY4ZjZhNyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/xT9IgzoKnwFNmISR8I/giphy.gif"
     },
     {
-      title: "Global Network",
-      description: "Connect with a community of tech professionals worldwide.",
+      title: "DIGITAL CONSULTING",
+      description: "As we expand our services, TechTheory will offer digital transformation consultancy to organizations, leveraging our deep knowledge of technology trends and industry best practices.",
       image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWJjNzI0ZWY0ZWNhMzM4ZWNhOGM0ZjM5Y2M5NzBkZDY4ZTY4ZjZhNyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/l46Cy1rHbQ92uuLXa/giphy.gif"
     }
   ]
@@ -32,7 +32,7 @@ const Features = () => {
               alt={feature.title}
               className="w-full h-48 object-cover rounded mb-4"
             />
-            <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+            <h3 className="text-xl font-semibold mb-2 text-[#FF9F7B]">{feature.title}</h3>
             <p className="text-gray-400">{feature.description}</p>
           </div>
         ))}
