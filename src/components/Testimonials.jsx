@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Autoplay } from 'swiper/modules'
+import { motion } from 'framer-motion'
 import 'swiper/css'
 import 'swiper/css/pagination'
 
@@ -22,12 +23,19 @@ const Testimonials = () => {
   return (
     <section className="py-20 bg-gray-800" id="testimonials">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-2xl md:text-5xl font-bold text-center mb-4 text-[#FF9F7B]">
-          Client Testimonials
-        </h2>
-        <p className="text-xl text-center text-white mb-12">
-          Here's what some of our clients have to say about us
-        </p>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <h2 className="text-2xl md:text-5xl font-bold text-center mb-4 text-[#FF9F7B]">
+            Client Testimonials
+          </h2>
+          <p className="text-xl text-center text-white mb-12">
+            Here's what some of our clients have to say about us
+          </p>
+        </motion.div>
         
         <Swiper
           modules={[Pagination, Autoplay]}
@@ -45,16 +53,26 @@ const Testimonials = () => {
           }}
           className="pb-12"
         >
-          {testimonials.map((testimonial) => (
+          {testimonials.map((testimonial, index) => (
             <SwiperSlide key={testimonial.name}>
-              <div className="bg-gray-100 p-8 rounded-3xl h-full flex flex-col shadow-lg ">
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ 
+                  duration: 0.8, 
+                  ease: "easeOut",
+                  delay: index * 0.2 // Stagger the animations
+                }}
+                className="bg-gray-100 p-8 rounded-3xl h-full flex flex-col shadow-lg"
+              >
                 <p className="text-gray-800 mb-6 text-lg leading-relaxed h-[300px]">
                   {testimonial.text}
                 </p>
                 <p className="text-[#FF9F7B] font-semibold text-lg">
                   - {testimonial.name}
                 </p>
-              </div>
+              </motion.div>
             </SwiperSlide>
           ))}
         </Swiper>
