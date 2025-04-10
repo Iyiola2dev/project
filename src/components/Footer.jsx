@@ -30,7 +30,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="#" className="hover:text-white transition-colors">LinkedIn</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Twitter</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">GitHub</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Info@Techtheory.co.uk</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Discord</a></li>
             </ul>
           </div>
