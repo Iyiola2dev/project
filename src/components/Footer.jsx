@@ -11,8 +11,8 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-white mb-4">Programs</h4>
             <ul className="space-y-2">
               <li><a href="#" className="hover:text-white transition-colors">Web Development</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Data Science</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Cloud Computing</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Cybersecurity</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Business Consultation</a></li>
               <li><a href="#" className="hover:text-white transition-colors">AI & ML</a></li>
             </ul>
           </div>
