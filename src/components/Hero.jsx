@@ -19,12 +19,12 @@ const Hero = () => {
         >
           <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold mb-6 leading-tight">
             Ignite Your Digital Transformation Journey,
-            <span className="text-blue-400"> Empowering Tomorrow's Agile Leaders Today!</span>
+            <span className="text-[#FF9F7B]"> Empowering Tomorrow's Agile Leaders Today!</span>
           </h1>
         </motion.div>
         
         <motion.button
-          className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold transition-all"
+          className="bg-[#FF9F7B] hover:bg-[#FF9F7B]/20 text-gray-800 hover:text-white px-8 py-3 rounded-full text-lg font-semibold transition-all"
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}

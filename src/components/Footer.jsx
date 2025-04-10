@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold text-white mb-4">TechCareer</h3>
+            <img className="h-[3rem]" src="https://res.cloudinary.com/dtlejpoxq/image/upload/v1744281981/TechTheory_qfthta.png" alt="" />
             <p className="text-sm">Empowering the next generation of tech leaders through comprehensive career development and mentorship.</p>
           </div>
           <div>

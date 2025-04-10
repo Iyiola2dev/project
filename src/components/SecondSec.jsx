@@ -7,19 +7,20 @@ import "swiper/css/pagination";
 const heroSlides = [
   {
     image:
-      "https://res.cloudinary.com/dtlejpoxq/image/upload/v1744246608/Altan/christina-wocintechchat-com-glRqyWJgUeY-unsplash_uir7kr.jpg",
+      // "https://media.giphy.com/media/2z73e5pARxR03U7CB7/giphy.gif?cid=ecf05e476l3smj5o95nuho2pj2kkdtbh9zffqxa10buz3itw&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG5vMTI2aDFiaDBqcmV5Njl0YmhpZW94eGwzZnB3djBxbnprYjl6ciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/2ikwIgNrmPZICNmRyX/giphy.gif",
     title: "Innovative Web Solutions",
     subtitle: "Build with the future in mind",
   },
   {
     image:
-      "https://res.cloudinary.com/dtlejpoxq/image/upload/v1744246605/Altan/alex-kotliarskyi-ourQHRTE2IM-unsplash_vxcbdw.jpg",
+      "https://media.giphy.com/media/sy6b3bKGLdTaKqmWAu/giphy.gif?cid=ecf05e47xlldcyao8gyihuq4xsbw4idfdfumd8l63tbt1v3l&ep=v1_gifs_search&rid=giphy.gif&ct=g",
     title: "AI & Machine Learning",
     subtitle: "Smarter tools for a smarter world",
   },
   {
     image:
-      "https://res.cloudinary.com/dtlejpoxq/image/upload/v1744246852/Altan/jj-ying-8bghKxNU1j0-unsplash_lvrlpe.jpg",
+      "https://media.giphy.com/media/cKgnjkZU5ctfsZVGE1/giphy.gif?cid=ecf05e474qhxcx4ez5ejfo1rtr2qol5tjnnqopk59cks9vn5&ep=v1_gifs_search&rid=giphy.gif&ct=g",
     title: "Next-Gen Apps",
     subtitle: "Powerful experiences across all devices",
   },
@@ -36,7 +37,7 @@ const SecondSec = () => {
         loop={true}
         className="h-screen"
       >
-        {heroSlides.map((slide, index) => (
+        {/* {heroSlides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div
               className="min-h-screen bg-cover bg-center "
@@ -54,6 +55,32 @@ const SecondSec = () => {
                   {slide.subtitle}
                 </p>
                 <button className="mt-8 px-8 py-3 border-2 border-white hover:bg-white hover:text-black transition-colors duration-300 font-raleway font-semibold text-lg rounded-full">
+                  Start Your Journey Now
+                </button>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))} */}
+
+{heroSlides.map((slide, index) => (
+          <SwiperSlide key={index}>
+            <div className="relative h-screen">
+              <div className="absolute inset-0">
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  className="w-full h-full object-cover opacity-40"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent" />
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+                <h2 className="font-playfair text-4xl md:text-7xl font-bold mb-4 text-white drop-shadow-lg">
+                  {slide.title}
+                </h2>
+                <p className="font-raleway text-xl md:text-2xl text-white mb-8 drop-shadow-md">
+                  {slide.subtitle}
+                </p>
+                <button className="mt-8 px-8 py-3 bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300 font-raleway font-semibold text-lg rounded-full">
                   Start Your Journey Now
                 </button>
               </div>

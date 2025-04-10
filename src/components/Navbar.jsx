@@ -20,7 +20,8 @@ const Navbar = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
           >
-            TechTheory
+            {/* TechTheory */}
+            <img className='h-[2.5rem] md:h-[2rem] lg:h-[2.5rem] xl:h-[3rem]' src="https://res.cloudinary.com/dtlejpoxq/image/upload/v1744281981/TechTheory_qfthta.png" alt="Logo" />
           </motion.div>
           
           <div className="hidden md:flex space-x-8">
@@ -37,7 +38,7 @@ const Navbar = () => {
 
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-gray-300 hover:text-white focus:outline-none"
+            className="md:hidden text-[#FF9F7B] hover:text-[#FF9F7B]/20 focus:outline-none"
           >
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               {isMenuOpen ? (
@@ -61,7 +62,7 @@ const Navbar = () => {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
+                  className="block px-3 py-2 text-[#FF9F7B] hover:text-[#FF9F7B]/20 transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
