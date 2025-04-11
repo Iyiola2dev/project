@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion'
+
 const Features = () => {
   const features = [
     {
@@ -21,20 +23,34 @@ const Features = () => {
     <section className="py-5 lg:py-20 px-4 bg-white" id="programs">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {features.map((feature, index) => (
-          <div 
+          <motion.div 
             key={feature.title}
-            className="bg-gray-800 p-6 rounded-lg"
-            data-aos="fade-up"
-            data-aos-delay={100 * (index + 1)}
+            className="bg-gray-800 p-6 rounded-lg overflow-hidden"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
           >
             <img 
               src={feature.image}
               alt={feature.title}
               className="w-full h-48 object-cover rounded mb-4"
             />
-            <h3 className="text-xl font-semibold mb-2 text-[#FF9F7B]">{feature.title}</h3>
-            <p className="text-gray-400">{feature.description}</p>
-          </div>
+            <motion.div
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ 
+                duration: 0.7, 
+                delay: index * 0.2 + 0.3,
+                type: "spring",
+                stiffness: 100
+              }}
+            >
+              <h3 className="text-xl font-semibold mb-2 text-[#FF9F7B]">{feature.title}</h3>
+              <p className="text-gray-400">{feature.description}</p>
+            </motion.div>
+          </motion.div>
         ))}
       </div>
     </section>

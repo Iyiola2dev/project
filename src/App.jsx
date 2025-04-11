@@ -9,6 +9,7 @@ import Features from './components/Features'
 import Testimonials from './components/Testimonials'
 import Footer from './components/Footer'
 import SecondSec from './components/SecondSec'
+import WhyChooseUs from './components/WhyChooseUs'
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
       <Features />
      
       <Testimonials />
+      <WhyChooseUs/>
       <Footer />
     </div>
   )
