@@ -7,8 +7,8 @@ import "swiper/css/pagination";
 const heroSlides = [
   {
     image:
-      // "https://media.giphy.com/media/2z73e5pARxR03U7CB7/giphy.gif?cid=ecf05e476l3smj5o95nuho2pj2kkdtbh9zffqxa10buz3itw&ep=v1_gifs_search&rid=giphy.gif&ct=g",
-      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG5vMTI2aDFiaDBqcmV5Njl0YmhpZW94eGwzZnB3djBxbnprYjl6ciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/2ikwIgNrmPZICNmRyX/giphy.gif",
+      "https://media.giphy.com/media/2z73e5pARxR03U7CB7/giphy.gif?cid=ecf05e476l3smj5o95nuho2pj2kkdtbh9zffqxa10buz3itw&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+      // "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTZ6OGtneGRpYzE4eGNjeDhoM2ZybW9mdzJ0eWVrYnl3ZG9pdGl0bCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/9PrFYof7RY3qyAsLIP/giphy.gif",
     title: "Innovative Web Solutions",
     subtitle: "Build with the future in mind",
   },

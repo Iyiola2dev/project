@@ -1,5 +1,47 @@
 import { motion } from 'framer-motion'
 
+
+const ZigzagLine = () => {
+    // SVG path for a longer zigzag line
+    const pathVariants = {
+      hidden: {
+        pathLength: 0,
+        opacity: 0
+      },
+      visible: {
+        pathLength: 1,
+        opacity: 1,
+        transition: {
+          duration: 1.5,
+          ease: "easeInOut",
+          repeat: Infinity,
+          repeatType: "reverse"
+        }
+      }
+    };
+  
+    return (
+      <motion.svg 
+        width="60" 
+        height="24" 
+        viewBox="0 0 60 24" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+        className="inline-block ml-2"
+      >
+        <motion.path
+          d="M2 12 L8 6 L14 18 L20 6 L26 18 L32 6 L38 18 L44 6 L50 18 L56 12"
+          stroke="#FF9F7B"
+          strokeWidth="2"
+          strokeLinecap="round"
+          variants={pathVariants}
+          initial="hidden"
+          animate="visible"
+        />
+      </motion.svg>
+    );
+  };
+  
 const WhyChooseUs = () => {
   const benefits = [
     {
@@ -35,7 +77,7 @@ const WhyChooseUs = () => {
           transition={{ duration: 0.6, type: "spring" }}
         >
           Why Choose Us? 
-          <span className="text-[#FF9F7B]">✨</span>
+          <span className="text-[#FF9F7B]"><ZigzagLine /></span>
         </motion.h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
