@@ -18,12 +18,12 @@ const heroSlides = [
     title: "AI & Machine Learning",
     subtitle: "Smarter tools for a smarter world",
   },
-  {
-    image:
-      "https://media.giphy.com/media/cKgnjkZU5ctfsZVGE1/giphy.gif?cid=ecf05e474qhxcx4ez5ejfo1rtr2qol5tjnnqopk59cks9vn5&ep=v1_gifs_search&rid=giphy.gif&ct=g",
-    title: "Next-Gen Apps",
-    subtitle: "Powerful experiences across all devices",
-  },
+  // {
+  //   image:
+  //     "https://media.giphy.com/media/cKgnjkZU5ctfsZVGE1/giphy.gif?cid=ecf05e474qhxcx4ez5ejfo1rtr2qol5tjnnqopk59cks9vn5&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+  //   title: "Next-Gen Apps",
+  //   subtitle: "Powerful experiences across all devices",
+  // },
 ];
 
 const SecondSec = () => {
